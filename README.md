@@ -7,7 +7,7 @@
 | **[ [```Paper```](https://openreview.net/pdf?id=rDT-n9xysO) ]** | **[ [```Poster```](https://neurips.cc/virtual/2022/poster/54408) ]**
 |:-------------------:|:-------------------:|
 
-<img src="assets/symbolicpcc.jpg">
+<img src="assets/symbolicpcc.jpg" width="768">
 
 </div>
 
@@ -15,7 +15,17 @@
 
 ## Introduction
 
-Recent advances in TCP congestion control (CC) have achieved tremendous success with deep reinforcement learning (RL) approaches, which use feedforward neural networks (NN) to learn complex environment conditions and make better decisions. However, such "black-box" policies lack interpretability and reliability, and often, they need to operate outside the traditional TCP datapath due to the use of complex NNs. This paper proposes a novel two-stage solution to achieve the best of both worlds: first to train a deep RL agent, then distill its over-parameterized NN policy into white-box, light-weight rules in the form of _symbolic_ expressions that are much easier to understand and to implement in constrained environments. At the core of our proposal is a novel **symbolic branching** algorithm that enables the rule to be aware of the context in terms of various network conditions, eventually converting the NN policy into a symbolic tree. The distilled symbolic rules preserve and often improve performance over state-of-the-art NN policies while being faster and simpler than a standard neural network. We validate the performance of our distilled symbolic rules on both simulation and emulation environments. 
+Recent advances in TCP congestion control (CC) have achieved tremendous success with deep reinforcement learning (RL)
+approaches, which use feedforward neural networks (NN) to learn complex environment conditions and make better
+decisions. However, such "black-box" policies lack interpretability and reliability, and often, they need to operate
+outside the traditional TCP datapath due to the use of complex NNs. This paper proposes a novel two-stage solution to
+achieve the best of both worlds: first to train a deep RL agent, then distill its over-parameterized NN policy into
+white-box, light-weight rules in the form of _symbolic_ expressions that are much easier to understand and to implement
+in constrained environments. At the core of our proposal is a novel **symbolic branching** algorithm that enables the
+rule to be aware of the context in terms of various network conditions, eventually converting the NN policy into a
+symbolic tree. The distilled symbolic rules preserve and often improve performance over state-of-the-art NN policies
+while being faster and simpler than a standard neural network. We validate the performance of our distilled symbolic
+rules on both simulation and emulation environments.
 
 <div align="center">
 <table>
@@ -90,7 +100,7 @@ TODO
 
 ## Citation
 
-If you find our code implementation helpful for your own resarch or work, please cite our paper.
+If you find our code implementation helpful for your own research or work, please cite our paper.
 
 ```bibtex
 @inproceedings{
@@ -105,7 +115,8 @@ If you find our code implementation helpful for your own resarch or work, please
 
 # Contact
 
-For any queries, please [raise an issue](https://github.com/VITA-Group/SymbolicPCC/issues/new) or contact [S P Sharan](mailto:spsharan@utexas.edu).
+For any queries, please [raise an issue](https://github.com/VITA-Group/SymbolicPCC/issues/new) or
+contact [S P Sharan](mailto:spsharan@utexas.edu).
 
 # License
 
